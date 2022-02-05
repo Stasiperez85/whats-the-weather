@@ -19,25 +19,35 @@
 
     <main>
         <div class="container">
+            <div class="row">
+                <div id="" class=" col-12 col-md-3 search">
+                    <h2>Search for a City:</h2>
+                    <form id="form-search-city " class="p-3">
+                        <Input placeholder="Enter City" type="text" class="search-box"></Input>
+                        <button type="submit" class="search-btn btn-primary text-light">Search</button>
+                    </form>
+                    <div id="prev-search-btn"></div>
+                </div>
 
-            <div class="row search">
-                <div id="" class=" col-12 col-md-4">
-                <h2>Search for a City:</h2>
-                <form class="form-group form-control-lg">
-                    <Input placeholder="Enter City" type="text" class="search-box"></Input>
-                    <button type="submit" class="search-btn btn btn-primary text-light">Search</button>
-                </form>
+                <div class="row border">
+                    <div id="current-weather" class="col-12 col-md-9 results-city">
+                        <div class="col-12">
+                            <h2 class="results-city"></h2>
+                            <h2 class="results-date"></h2>
+                            <div id="current-weather-details" class="details-list">
+                                <p class="temp">Temp:</p>
+                                <p class="wind">Wind:</p>
+                                <p class="humidity">Humidity:</p>
+                                <p class="uv-index">UV Index:</p>
+                            </div>
+                        </div>
+                        <div id="fivd-day-forcast" class="row">
+                            <h2 id="five-day" class="col-12"></h2>
+                            <div id="five-day-details" class=""></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="row results">
-             <div class="col-12 col-md-8 border border-dark">
-                <h2 id=""></h2>
-                <p>Temp</p>
-             </div>
-            </div>
-
-            </div>
-
         </div>
     </main>
 </body>
